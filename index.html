@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+        <h1>FOOD ITEMS</h1>
+        <div class="task-form">
+            <input type="text" id="taskTitle" placeholder=" Title" required>
+            <br>
+            <textarea id="taskdescription" placeholder="description"></textarea>
+            <br>
+            <input type="date" id="taskDueDate" required>
+            <br>
+            <select id="taskPriority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <br>
+            <input type="text" id="taskCategory" placeholder="Category">
+            <br>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+
+        <!-- Task Summary Panel -->
+        <div class="task-summary">
+            <p>Total Tasks: <span id="totalTasks">0</span></p>
+            <p>Pending Tasks: <span id="pendingTasks">0</span></p>
+            <p>Completed Tasks: <span id="completedTasks">0</span></p>
+        </div>
+
+        <!-- Task List -->
+        <div class="task-list" id="taskList"></div>
+
+        <!-- Dark Mode Toggle -->
+        <button id="darkModeToggle">Dark Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
